@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@600&family=Love+Ya+Like+A+Sister&display=swap');
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(60deg, #d8fa08, #d8fa08);
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+#header{
+    font-size: 3rem;
+}
+
+#header #heading{
+    text-align: center;
+    font-family: 'Love Ya Like A Sister', cursive;
+    color: #fff;
+    margin-top: 50px;
+    font-size: 3rem;
+
+    /* background: blue; */
+}
+
+#header p{
+    /* font-size: 30px; */
+    font-family: 'Love Ya Like A Sister', cursive;
+    color: #fff;
+    text-align: center;
+}
+
+#heading span{
+    width: 100%;
+    /* background: green; */
+  
+}
+
+
+.score-data{
+    /* margin: 50px auto; */
+    font-family: 'Love Ya Like A Sister', cursive;
+    color: #005;
+    position: absolute;
+    right: 10%;
+    top: 7%;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+
+}
+
+
+.wrapper{
+    width: 400px;
+    height: auto;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px auto;
+    font-family: 'Love Ya Like A Sister', cursive;
+    animation: slide-left 2s;
+
+
+}
+
+.wrapper h2{
+    text-align: center;
+}
+
+.wrapper div{
+    display: none;
+    position: relative;
+}
+
+@keyframes slide-left{
+    0%{
+        margin-top: -30%;
+    }
+    
+    100%{
+        margin-top: 0%;
+    }
+}
+
+.wrapper div p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.wrapper div button:hover{
+    cursor: pointer;
+}
+
+.wrapper .first{
+    display: block;    
+    text-align: center;
+    margin: auto;
+}
+
+.first h2{
+    width: 15ch;
+    white-space: nowrap;
+    overflow: hidden;
+    /* border-right: 3px solid; */
+    font-size: 1.5vw;
+    animation: typing 2s steps(14)  alternate,
+    blink 0.4s step-end  alternate;
+    text-shadow: 0px 0px 3px white;
+    /* text-align: center; */
+    margin: auto;
+}
+
+.second{
+
+}
+
+/* .second p{
+  
+    width: 97ch;
+    word-wrap: nowrap;
+ 
+    overflow: hidden;
+    border-right: 3px solid black;
+    font-size: 1.5vw;
+
+    text-shadow: 0px 0px 3px white;
+} */
+
+
+
+@keyframes typeWriter{
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 97ch;
+    }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+
+
+/* ***** INSERT ANIMATION FOR DIV ***** */
+
+/* .wrapper div{
+    transition: 3s ease-in-out;
+} */
