@@ -196,7 +196,9 @@ twentyBtn.addEventListener('click', function (){
 
     // ***end text****
     let tag = document.createElement('div');
-    tag.textContent = "happy 21 years old";
+    tag.textContent = "တစ်နေ့ကျရင် ချစ်ကို လက်ထက်မယ်...";
+    tag.style.textAlign = "center";
+
 
     body.append(tag);
 
@@ -204,5 +206,3 @@ twentyBtn.addEventListener('click', function (){
 });
 
 
-let a = "မွေးနေ့မှာချစ်ဖစ်ချင်တဲ့ဆန္ဒတွေ အိပ်မက်တွေတကယ်ဖစ်ရပါစေကွာ ဒီထက်မကလဲပျော်အောင်ကိုထားပေးသွားမယ်နော်";
-console.log(a.length);
