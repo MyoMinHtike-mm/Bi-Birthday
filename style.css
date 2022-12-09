@@ -9,40 +9,39 @@
 body{
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(60deg, #d8fa08, #d8fa08);
-    /* background: red; */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+}
 
+.header-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #header{
-    font-size: 3rem;
+    position: relative;
 }
 
 #header #heading{
     text-align: center;
     font-family: 'Love Ya Like A Sister', cursive;
     color: #fff;
-    margin-top: 50px;
+    margin-top: 40px;
     font-size: 3rem;
 
     /* background: blue; */
 }
 
 #header p{
-    /* font-size: 30px; */
+    font-size: 50px;
     font-family: 'Love Ya Like A Sister', cursive;
     color: #fff;
     text-align: center;
+    margin-top: -20px;
+    /* color: red; */
 }
 
 #heading span{
-    width: 100%;
-    /* background: green; */
-  
+    width: 100%;  
 }
 
 
@@ -50,11 +49,7 @@ body{
     /* margin: 50px auto; */
     font-family: 'Love Ya Like A Sister', cursive;
     color: #005;
-    position: absolute;
-    right: 10%;
-    top: 7%;
-    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-
+    position: relative;
 }
 
 
@@ -63,12 +58,10 @@ body{
     height: auto;
     background: #fff;
     border-radius: 10px;
-    padding: 20px;
+    /* padding: 20px; */
     margin: 50px auto;
     font-family: 'Love Ya Like A Sister', cursive;
     animation: slide-left 2s;
-
-
 }
 
 .wrapper h2{
@@ -78,14 +71,25 @@ body{
 .wrapper div{
     display: none;
     position: relative;
+    /* border: 1px solid green; */
+    padding: 10px 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
+
+
 
 @keyframes slide-left{
     0%{
-        margin-top: -30%;
+        opacity: 0;
+        margin-top: -100%;
+    }
+
+    50%{
+        opacity: 0;
     }
     
     100%{
+        opacity: 1;
         margin-top: 0%;
     }
 }
@@ -106,35 +110,6 @@ body{
     margin: auto;
 }
 
-.first h2{
-    width: 15ch;
-    white-space: nowrap;
-    overflow: hidden;
-    /* border-right: 3px solid; */
-    font-size: 1.5vw;
-    animation: typing 2s steps(14)  alternate,
-    blink 0.4s step-end  alternate;
-    text-shadow: 0px 0px 3px white;
-    /* text-align: center; */
-    margin: auto;
-}
-
-.second{
-
-}
-
-/* .second p{
-  
-    width: 97ch;
-    word-wrap: nowrap;
- 
-    overflow: hidden;
-    border-right: 3px solid black;
-    font-size: 1.5vw;
-
-    text-shadow: 0px 0px 3px white;
-} */
-
 
 
 @keyframes typeWriter{
@@ -152,17 +127,19 @@ body{
   }
 }
 
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
+
+
+
+
+
+/* ***** Media Query ***** */
+@media screen and (max-width: 476px){
+
+    #header #heading,#header p{
+        font-size: 2rem;
+    }
+
+
+
+    
 }
-
-
-
-
-/* ***** INSERT ANIMATION FOR DIV ***** */
-
-/* .wrapper div{
-    transition: 3s ease-in-out;
-} */
